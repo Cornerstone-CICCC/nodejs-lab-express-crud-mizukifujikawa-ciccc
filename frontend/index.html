@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <title>Employee Management</title>
+</head>
+<body>
+
+    <h1>Employees</h1>
+    <div id="app"></div>
+    
+    <div class="container">
+        <div class="left">
+            <!-- List of Employees -->
+            <h2>List of Employees</h2>
+            <ul id="employee-list">
+                <!-- <li>John Smith 
+                    <button class="btn btn-view">VIEW</button>
+                    <button class="btn btn-edit">EDIT</button>
+                    <button class="btn btn-delete">DELETE</button>
+                </li>
+                <li>Jane Doe 
+                    <button class="btn btn-view">VIEW</button>
+                    <button class="btn btn-edit">EDIT</button>
+                    <button class="btn btn-delete">DELETE</button>
+                </li>
+                <li>Joe Moe 
+                    <button class="btn btn-view">VIEW</button>
+                    <button class="btn btn-edit">EDIT</button>
+                    <button class="btn btn-delete">DELETE</button>
+                </li> -->
+            </ul>
+    
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Enter first name...">
+                <button class="btn">Search and View Employees</button>
+            </div>
+    
+            <!-- Add Employee -->
+            <h2>Add Employee</h2>
+            <div class="form-group add-form">
+                <input type="text" name='firstname' placeholder="First name">
+                <input type="text" name='lastname' placeholder="Last name">
+                <input type="number" name='age' placeholder="Age">
+                <label class="checkbox">
+                    Married? <input name='married' type="checkbox">
+                </label>
+                <button class="btn">Add Employee</button>
+            </div>
+    
+            <!-- Edit Employee -->
+            <h2>Edit Employee</h2>
+            <div class="form-group edit-form">
+                <!-- <input type="text" name='firstname' value="John">
+                <input type="text" name='lastname' value="Smith">
+                <input type="number" name='age' value="40">
+                <label class="checkbox">
+                    Married? <input name='married' type="checkbox" checked>
+                </label>
+                <button class="btn">Edit Employee</button> -->
+            </div>
+        </div>
+    
+        <!-- View Employee Info -->
+        <div class="right"></div>
+    </div>
+    <script src="./app.js" type="module"></script>
+    </body>
+    </html>
